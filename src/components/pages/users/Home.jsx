@@ -7,6 +7,7 @@ const contentStyle = {
   lineHeight: "160px",
   textAlign: "center",
   background: "#364d79",
+  padding: "0",
 };
 const Home = () => {
   const onChange = (currentSlide) => {
@@ -14,7 +15,7 @@ const Home = () => {
   };
   return (
     <div>
-      <Carousel afterChange={onChange}>
+      <Carousel afterChange={onChange} autoplay>
         <div>
           <h3 style={contentStyle}>1</h3>
         </div>

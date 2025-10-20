@@ -3,7 +3,7 @@ import UserFooter from "../Footer/UserFooter";
 import UserNav from "../Nav/UserNav";
 const UserLayout = () => {
   return (
-    <div>
+    <div className="m-0 p-0">
       <UserNav />
       User layout
       <Outlet />
