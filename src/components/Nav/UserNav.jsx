@@ -31,6 +31,7 @@ const UserNav = () => {
           ]}
           style={{
             flex: 1,
+            fontFamily: "Poppins",
             background: "",
             justifyContent: "end",
             alignItems: "end",

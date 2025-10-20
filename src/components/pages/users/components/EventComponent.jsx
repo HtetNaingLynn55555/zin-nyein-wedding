@@ -44,22 +44,22 @@ export default function EventComponent({ targetDate }) {
         src="/images/event.jpg"
         alt=""
       />
-      <div className="absolute  top-0  w-full h-55 flex gap-3 justify-center items-center">
-        <div className="flex flex-col items-center">
+      <div className="absolute font-secondary text-gray-600  top-0  w-full h-55 flex gap-5 justify-center items-center">
+        <div className="flex gap-4  flex-col items-center">
           <Countdown time={timeLeft.days} />
-          Days
+          <span> Days</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex gap-4 flex-col items-center">
           <Countdown time={timeLeft.hours} />
-          Hours
+          <span> Hours</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex gap-4 flex-col items-center">
           <Countdown time={timeLeft.minutes} />
-          Minutes
+          <span>Minutes</span>
         </div>
-        <div className="flex flex-col items-center">
+        <div className="flex gap-4 flex-col items-center">
           <Countdown time={timeLeft.seconds} />
-          Seconds
+          <span> Seconds</span>
         </div>
       </div>
     </div>
