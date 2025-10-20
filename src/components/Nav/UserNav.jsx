@@ -25,9 +25,9 @@ const UserNav = () => {
         <Menu
           mode="horizontal"
           items={[
-            { key: 1, label: "home" },
-            { key: 2, label: "story" },
-            { key: 3, label: "gallary" },
+            { key: 1, label: "Home" },
+            { key: 2, label: "Story" },
+            { key: 3, label: "Gallery" },
           ]}
           style={{
             flex: 1,

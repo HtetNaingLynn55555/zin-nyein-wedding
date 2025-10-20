@@ -5,7 +5,7 @@ const UserLayout = () => {
   return (
     <div className="m-0 p-0">
       <UserNav />
-      User layout
+
       <Outlet />
       <UserFooter />
     </div>
