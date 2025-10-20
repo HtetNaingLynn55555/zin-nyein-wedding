@@ -44,7 +44,11 @@ export default function EventComponent({ targetDate }) {
         src="/images/event.jpg"
         alt=""
       />
-      <div className="absolute font-secondary text-gray-600  top-0  w-full h-55 flex gap-5 justify-center items-center">
+
+      <div className="absolute font-primary text-gray-600 text-3xl flex justify-center items-center top-0 h-20 min-w-full text-center">
+        <span>Don’t Miss It !</span>
+      </div>
+      <div className="absolute font-secondary text-gray-600  top-14  w-full h-35 flex gap-5 justify-center items-center">
         <div className="flex gap-4  flex-col items-center">
           <Countdown time={timeLeft.days} />
           <span> Days</span>
