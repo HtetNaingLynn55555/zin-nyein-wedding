@@ -2,7 +2,6 @@ export default function WeddingQuote() {
   return (
     <div className="flex flex-col gap-2  py-3 my-5 justify-center items-center">
       <h1 className="text-[15px] font-medium text-gray-500 font-primary">
-        {" "}
         Save The Date
       </h1>
       <h1 className="text-3xl text-gray-700 font-bold font-primary">
