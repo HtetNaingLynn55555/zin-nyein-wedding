@@ -61,7 +61,7 @@ export default function EventComponent({ targetDate }) {
           <Countdown time={timeLeft.minutes} />
           <span>Minutes</span>
         </div>
-        <div className="flex gap-4 flex-col items-center">
+        <div className=" hidden  sm:flex gap-4 flex-col items-center">
           <Countdown time={timeLeft.seconds} />
           <span> Seconds</span>
         </div>

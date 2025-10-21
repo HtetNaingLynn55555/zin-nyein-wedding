@@ -3,6 +3,9 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { RowsPhotoAlbum } from "react-photo-album";
 import "react-photo-album/rows.css";
+
+import { MasonryPhotoAlbum } from "react-photo-album";
+import "react-photo-album/masonry.css";
 import { useState } from "react";
 export default function GalleryPhoto() {
   const [open, setOpen] = useState(false);
@@ -34,6 +37,9 @@ export default function GalleryPhoto() {
           { src: "/images/coupleTwo.jpg", width: 800, height: 600 },
           { src: "/images/coupleThree.jpg", width: 800, height: 600 },
         ]}
+        rowConstraints={(containerWidth) => ({
+          maxPhotos: containerWidth < 768 ? 1 : 3, // 1 photo for devices < 768px, 3 for larger
+        })}
         targetRowHeight={150}
         onClick={({ index: current }) => setIndex(current)}
       />
