@@ -6,12 +6,14 @@ import { FaRegHeart } from "react-icons/fa";
 import OurStory from "./components/story/OurStory";
 import Map from "./components/Map";
 import Story from "./components/story/Story";
+import EventAnnounce from "./components/story/EventAnnounce";
 const Home = () => {
   return (
     <div>
       <CarouselComponent />
       <OurStory />
       <Story />
+      <EventAnnounce />
       <EventComponent targetDate={"November 2, 2025 11:30:00"} />
       <Gallery />
       <Event />
