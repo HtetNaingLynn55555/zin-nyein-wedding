@@ -1,12 +1,18 @@
 import Groom from "./Groom";
 import CouplePhoto from "./CouplePhoto";
 import Bride from "./Bride";
-import WeddingQuote from "./WeddingQuote";
+import Card from "./Card";
 export default function OurStory() {
+  let paragraph = `To the world you may be one person, but to one person you are the
+        world Thank you for coming and attending with our wedding`;
   return (
     <div className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-4 md:col-span-6">
-        <WeddingQuote />
+        <Card
+          title={"Save The Date"}
+          header={"Our Wedding"}
+          paragraph={paragraph}
+        />
       </div>
       <div className="col-span-12 md:grid my-5 py-4  md:grid-cols-10 md:col-start-2 md:col-span-10">
         <div className=" grid-cols-12 md:col-span-3">
