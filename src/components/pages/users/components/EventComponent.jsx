@@ -45,7 +45,7 @@ export default function EventComponent({ targetDate }) {
         alt=""
       />
 
-      <div className="absolute font-primary text-gray-600 text-3xl flex justify-center items-center top-0 h-20 min-w-full text-center">
+      <div className="absolute font-primary tracking-widest text-gray-900 text-3xl flex justify-center items-center top-0 h-20 min-w-full text-center">
         <span>Don’t Miss It !</span>
       </div>
       <div className="absolute font-secondary text-gray-600  top-14  w-full h-35 flex gap-5 justify-center items-center">

@@ -1,8 +1,42 @@
 import Card from "../story/Card";
+import EventType from "./EventType";
+import { MdOutlineFacebook } from "react-icons/md";
+import { MdAccessAlarms, MdMoreHoriz, MdFavoriteBorder } from "react-icons/md";
+
+// import { IoTimeOutline } from "react-icons/io5";
 export default function Event() {
   let paragraph = `Thank you for coming and attending with our wedding`;
+
+  let data = [
+    {
+      key: 1,
+      title: "Ceremony",
+      src: "/images/ring.png",
+      time: "12:00 AM - 16:00 PM",
+      address: "Meikhtila",
+      icon: <MdAccessAlarms />,
+    },
+
+    {
+      key: 2,
+      title: "Wedding Party",
+      src: "/images/plate.png",
+      time: "12:00 AM - 16:00 PM",
+      address: "Meikhtila",
+      icon: <MdAccessAlarms />,
+    },
+
+    {
+      key: 3,
+      title: "Photography",
+      src: "/images/camera.png",
+      time: "12:00 AM - 16:00 PM",
+      address: "Meikhtila",
+      icon: <MdAccessAlarms />,
+    },
+  ];
   return (
-    <div className="grid grid-cols-12">
+    <div className="grid grid-cols-12 my-7">
       <div className="col-span-12 md:col-start-4 md:col-span-6">
         <Card
           title={"Location & Time"}
@@ -10,12 +44,18 @@ export default function Event() {
           paragraph={paragraph}
         />
       </div>
-      <div className="col-span-12 md:grid my-5 py-4  md:grid-cols-10 md:col-start-2 md:col-span-10">
-        <div className=" grid-cols-12 md:col-span-3">Card One</div>
-        <div className=" grid-cols-12 flex justify-center items-center md:col-span-4">
-          Card Two
-        </div>
-        <div className=" grid-cols-12 md:col-span-3">Card Three</div>
+      <div className="col-start-7 text-center">
+        <MdFavoriteBorder className="text-gray-600" />
+      </div>
+      <div className="col-span-12 md:grid mb-5 py-4  md:grid-cols-10 md:col-start-3 md:col-span-9">
+        {data.map((item) => (
+          <div
+            key={item.key}
+            className=" mx-5 sm:mx-0 flex gap-8 justify-center items-center my-5 md:col-span-3"
+          >
+            <EventType data={item} />
+          </div>
+        ))}
       </div>
     </div>
   );

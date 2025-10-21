@@ -2,7 +2,9 @@ import { MdOutlineFacebook } from "react-icons/md";
 export default function Groom() {
   return (
     <div className="flex flex-col justify-center my-7 gap-4 py-3.5 items-center">
-      <h1 className="font-bold text-2xl text-gray-700 font-primary">Zin Min Thant</h1>
+      <h1 className="text-3xl text-gray-900 font-primary tracking-widest">
+        Zin Min Thant
+      </h1>
       <img src="/images/icon.png" alt="" />
       <p className="text-xl text-gray-600 text-center font-secondary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
