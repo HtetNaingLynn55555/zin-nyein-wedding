@@ -5,7 +5,7 @@ import { MdAccessAlarms, MdMoreHoriz, MdFavoriteBorder } from "react-icons/md";
 
 // import { IoTimeOutline } from "react-icons/io5";
 export default function Event() {
-  let paragraph = `Thank you for coming and attending with our wedding`;
+  let paragraph = `Thank you for celebrating our wedding with us.`;
 
   let data = [
     {
@@ -13,7 +13,7 @@ export default function Event() {
       title: "Ceremony",
       src: "/images/ring.png",
       time: "7:00 AM - 11:00 AM",
-      address: "Meikhtila",
+      address: " Shwe Hlan Nyaung Aing  Meiktila",
       icon: <MdAccessAlarms />,
     },
 
@@ -22,7 +22,7 @@ export default function Event() {
       title: "Wedding Party",
       src: "/images/plate.png",
       time: "7:00 AM - 11:00 AM",
-      address: "Meikhtila",
+      address: " Shwe Hlan Nyaung Aing  Meiktila",
       icon: <MdAccessAlarms />,
     },
 
@@ -31,7 +31,7 @@ export default function Event() {
       title: "Photography",
       src: "/images/camera.png",
       time: "7:00 AM - 11:00 AM",
-      address: "Meikhtila",
+      address: " Shwe Hlan Nyaung Aing  Meiktila",
       icon: <MdAccessAlarms />,
     },
   ];

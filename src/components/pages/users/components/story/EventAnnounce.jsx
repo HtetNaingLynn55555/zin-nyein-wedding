@@ -19,7 +19,7 @@ export default function EventAnnounce() {
             WHICH IS CELEBRATION ON
           </p>
           <p className="font-primary tracking-widest text-gray-900 text-3xl ">
-            11/2/2025
+            2/11/2025
           </p>
         </div>
         <div className="font-secondary text-gray-600 tracking-widest text-2xl">
@@ -27,10 +27,10 @@ export default function EventAnnounce() {
         </div>
         <div className="flex flex-col justify-center items-center gap-3">
           <p className="font-primary text-3xl tracking-widest text-gray-900">
-            Shwe Hlan Nyaung Eain
+            Shwe Hlan Nyaung Aing
           </p>
           <p className="font-secondary text-gray-600 font-medium text-2xl">
-            Meikthila
+             Meiktila
           </p>
         </div>
       </div>
