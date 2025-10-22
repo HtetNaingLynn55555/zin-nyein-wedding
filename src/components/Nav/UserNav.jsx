@@ -100,15 +100,21 @@ const UserNav = () => {
         </Header>
       </div>
 
-      <div className="md:hidden fixed top-0 left-0 w-full z-[1000] bg-white/90 backdrop-blur-md shadow-sm flex justify-between items-center px-4 py-2">
+      <div className="md:hidden fixed top-0 left-0 w-full z-[1000] bg-white opacity-80 backdrop-blur-md shadow-sm flex justify-between items-center px-4 py-2">
         <div className="w-5">
           <img src="/images/wedding.png" alt="wedding logo" />
         </div>
         <Button type="text" icon={<MenuOutlined />} onClick={showDrawer} />
       </div>
-      <Button type="text" icon={<MenuOutlined />} onClick={showDrawer} />
+      {/* <Button type="text" icon={<MenuOutlined />} onClick={showDrawer} /> */}
 
-      <Drawer title="Menu" placement="right" onClose={onClose} open={open}>
+      <Drawer
+        style={{ backgroundColor: "transparent", color: "black" }}
+        title="Menu"
+        placement="right"
+        onClose={onClose}
+        open={open}
+      >
         <Menu
           selectedKeys={[current]}
           mode="vertical"
@@ -116,7 +122,8 @@ const UserNav = () => {
           style={{
             flex: 1,
             fontFamily: "Poppins",
-
+            backgroundColor: "transparent",
+            color: "rgba(255, 255, 255, 0.9)",
             justifyContent: "end",
             alignItems: "end",
             minWidth: 0,
