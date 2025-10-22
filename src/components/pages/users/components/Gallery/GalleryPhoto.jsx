@@ -15,7 +15,6 @@ export default function GalleryPhoto() {
   let images = gallery.map((item) => {
     return { src: item.src, width: 800, height: 1100 };
   });
-  console.log(images);
 
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);

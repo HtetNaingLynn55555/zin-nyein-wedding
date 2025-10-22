@@ -18,7 +18,6 @@ const menuItems = [
   { key: "contact", label: "Gallery" },
 ];
 
-const sections = ["Home", "Story", "Invitation", "Gallery"];
 const UserNav = () => {
   const [current, setCurrent] = useState("Home");
 
@@ -29,6 +28,41 @@ const UserNav = () => {
   const handleSetActive = (key) => {
     setCurrent(key);
   };
+  const sections = ["Home", "Story", "Invitation", "Gallery"];
+
+  const itemsForMobileLink = sections.map((section) => ({
+    key: section,
+    label: (
+      <Link
+        to={section}
+        spy={true}
+        smooth={true}
+        offset={-70}
+        duration={500}
+        onSetActive={handleSetActive}
+        onClick={onClose}
+      >
+        {section.charAt(0).toUpperCase() + section.slice(1)}
+      </Link>
+    ),
+  }));
+
+  const itemsForLink = sections.map((section) => ({
+    key: section,
+    label: (
+      <Link
+        to={section}
+        spy
+        smooth
+        offset={-70}
+        duration={500}
+        onSetActive={handleSetActive}
+        onClick={onClose}
+      >
+        {section.charAt(0).toUpperCase() + section.slice(1)}
+      </Link>
+    ),
+  }));
   return (
     <Layout>
       {/* Desktop Menu */}
@@ -52,6 +86,7 @@ const UserNav = () => {
           <Menu
             selectedKeys={[current]}
             mode="horizontal"
+            items={itemsForLink}
             style={{
               flex: 1,
               fontFamily: "Poppins",
@@ -61,22 +96,7 @@ const UserNav = () => {
               minWidth: 0,
               border: 0,
             }}
-          >
-            {sections.map((section) => (
-              <Menu.Item key={section}>
-                <Link
-                  to={section}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
-                  onSetActive={handleSetActive}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </Link>
-              </Menu.Item>
-            ))}
-          </Menu>
+          />
         </Header>
       </div>
 
@@ -92,6 +112,7 @@ const UserNav = () => {
         <Menu
           selectedKeys={[current]}
           mode="vertical"
+          items={itemsForMobileLink}
           style={{
             flex: 1,
             fontFamily: "Poppins",
@@ -101,23 +122,7 @@ const UserNav = () => {
             minWidth: 0,
             border: 0,
           }}
-        >
-          {sections.map((section) => (
-            <Menu.Item key={section}>
-              <Link
-                to={section}
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                onSetActive={handleSetActive}
-                onClick={onClose}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </Link>
-            </Menu.Item>
-          ))}
-        </Menu>
+        />
       </Drawer>
     </Layout>
   );

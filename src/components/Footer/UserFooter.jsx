@@ -1,7 +1,6 @@
 import { Layout } from "antd";
 let { Footer } = Layout;
 const UserFooter = () => {
-  console.log("footer render");
   return (
     <Layout>
       <Footer

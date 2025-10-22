@@ -1,7 +1,7 @@
 import { data } from "../../../../../data";
 export default function EventAnnounce() {
   const photo = data.invitionPhoto;
-  console.log(photo);
+
   return (
     <div className="grid grid-cols-12 text-center gap-3 mb-9">
       <div className="col-start-2 rounded-md border-[1px] border-gray-600 col-span-10 md:col-start-2 md:col-span-5">
@@ -30,7 +30,7 @@ export default function EventAnnounce() {
             Shwe Hlan Nyaung Aing
           </p>
           <p className="font-secondary text-gray-600 font-medium text-2xl">
-             Meiktila
+            Meiktila
           </p>
         </div>
       </div>

@@ -14,7 +14,7 @@ const contentStyle = {
 };
 export default function CarouselComponent() {
   let coverPhoto = data.cover;
-  console.log(coverPhoto);
+
   return (
     <div id="Home" className="relative h-screen w-full">
       <Carousel
