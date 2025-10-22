@@ -7,7 +7,7 @@ export default function EventAnnounce() {
       <div className="col-start-2 rounded-md border-[1px] border-gray-600 col-span-10 md:col-start-2 md:col-span-5">
         <img className="p-5 w-full overflow-hidden" src={photo.src} alt="" />
       </div>
-      <div className="col-start-2 flex flex-col justify-between items-center gap-5 py-3 col-span-10 md:col-span-5">
+      <div className="col-start-2 flex flex-col justify-around items-center gap-5 py-3 col-span-10 md:col-span-5">
         <h1 className="font-secondary text-gray-600 font-medium text-2xl">
           JOIN US TO CELEBRATE THE WEDDING DAY OF
         </h1>
@@ -23,7 +23,7 @@ export default function EventAnnounce() {
           </p>
         </div>
         <div className="font-secondary text-gray-600 tracking-widest text-2xl">
-          9:00 AM ~ 12:00 PM
+          7:00 AM - 11:00 AM
         </div>
         <div className="flex flex-col justify-center items-center gap-3">
           <p className="font-primary text-3xl tracking-widest text-gray-900">

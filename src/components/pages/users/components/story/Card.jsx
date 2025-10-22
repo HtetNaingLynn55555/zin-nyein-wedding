@@ -9,7 +9,7 @@ export default function Card({ title, header, paragraph }) {
       </h1>
 
       <img src="/images/icon.png" alt="" />
-      <p className="text-gray-600 text-xl text-center font-secondary">
+      <p className="text-gray-600 leading-7 text-xl text-center font-secondary">
         {paragraph}
       </p>
     </div>

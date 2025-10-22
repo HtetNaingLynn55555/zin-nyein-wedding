@@ -12,7 +12,7 @@ export default function Story() {
         </div>
         <div className="p-[1px] w-2/4 bg-black opacity-30 "></div>
       </div>
-      <p className="col-start-2 col-span-10 font-secondary leading-7">
+      <p className="col-start-2 col-span-10 text-gray-600 font-secondary leading-7">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
         laboriosam nobis repellat voluptas praesentium quia animi, eveniet
         distinctio quas, tenetur magni deleniti, fuga similique quisquam. Minus

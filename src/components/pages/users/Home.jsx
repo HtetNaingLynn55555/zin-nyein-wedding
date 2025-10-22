@@ -14,7 +14,7 @@ const Home = () => {
       <OurStory />
       <Story />
       <EventAnnounce />
-      <EventComponent targetDate={"November 2, 2025 11:30:00"} />
+      <EventComponent targetDate={"November 2, 2025 07:00:00"} />
       <Gallery />
       <Event />
       <Map />

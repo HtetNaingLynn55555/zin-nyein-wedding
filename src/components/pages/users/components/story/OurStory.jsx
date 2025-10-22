@@ -3,8 +3,7 @@ import CouplePhoto from "./CouplePhoto";
 import Bride from "./Bride";
 import Card from "./Card";
 export default function OurStory() {
-  let paragraph = `To the world you may be one person, but to one person you are the
-        world Thank you for coming and attending with our wedding`;
+  let paragraph = `“Today we celebrate love, friendship, and forever. We are deeply grateful to have you witness this moment.”`;
   return (
     <div id="Story" className="grid grid-cols-12">
       <div className="col-span-12 md:col-start-4 md:col-span-6">
