@@ -81,7 +81,7 @@ const UserNav = () => {
           }}
         >
           <div className=" w-8 hidden sm:block">
-            <img src="/public/images/wedding.png" alt="" />
+            <img src="/images/wedding.png" alt="" />
           </div>
           <Menu
             selectedKeys={[current]}
