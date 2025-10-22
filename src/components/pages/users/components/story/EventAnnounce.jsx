@@ -1,21 +1,20 @@
+import { data } from "../../../../../data";
 export default function EventAnnounce() {
+  const photo = data.invitionPhoto;
+  console.log(photo);
   return (
     <div className="grid grid-cols-12 text-center gap-3 mb-9">
       <div className="col-start-2 rounded-md border-[1px] border-gray-600 col-span-10 md:col-start-2 md:col-span-5">
-        <img
-          className="p-5  overflow-hidden"
-          src="/images/zinandnyeinCouple.jpg"
-          alt=""
-        />
+        <img className="p-5 w-full overflow-hidden" src={photo.src} alt="" />
       </div>
-      <div className="col-start-2 flex flex-col gap-5 py-3 col-span-10 md:col-span-5">
+      <div className="col-start-2 flex flex-col justify-between items-center gap-5 py-3 col-span-10 md:col-span-5">
         <h1 className="font-secondary text-gray-600 font-medium text-2xl">
           JOIN US TO CELEBRATE THE WEDDING DAY OF
         </h1>
         <p className="font-primary tracking-widest  text-gray-900 text-3xl">
           Zin & Nyein
         </p>
-        <div className="gap-5 flex flex-col justify-center items-center">
+        <div className="gap-5 flex flex-col justify-between items-center">
           <p className="font-secondary text-gray-600 font-medium text-2xl">
             WHICH IS CELEBRATION ON
           </p>

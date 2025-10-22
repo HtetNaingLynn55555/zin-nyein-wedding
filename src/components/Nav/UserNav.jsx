@@ -8,11 +8,15 @@ const items = Array.from({ length: 3 }).map((_, index) => ({
 }));
 
 const UserNav = () => {
-  console.log(items);
   return (
     <Layout>
       <Header
         style={{
+          position: "fixed",
+          opacity: 0.9,
+          top: 0,
+          zIndex: 1,
+          width: "100%",
           display: "flex",
           alignItems: "center",
           background: "white",

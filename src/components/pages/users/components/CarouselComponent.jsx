@@ -1,5 +1,7 @@
 import { Carousel, Image } from "antd";
 
+import { data } from "../../../../data";
+import Item from "antd/es/list/Item";
 const contentStyle = {
   margin: 0,
   height: "460px",
@@ -11,38 +13,27 @@ const contentStyle = {
   padding: "0",
 };
 export default function CarouselComponent() {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
+  let coverPhoto = data.cover;
+  console.log(coverPhoto);
   return (
     <div className="relative h-screen w-full">
       <Carousel
-        fade
+        effect="fade"
+        pauseOnHover={false}
         dots={false}
-        autoplaySpeed={2000}
-        speed={1000}
+        autoplaySpeed={2500}
+        speed={2000}
         className="w-full h-full"
-        afterChange={onChange}
         autoplay
       >
-        <div>
-          <img
-            className="w-full h-screen object-cover object-center"
-            src="/public/images/coupleOne.jpg"
-          />
-        </div>
-        <div>
-          <img
-            className="w-full  h-screen  object-cover object-center"
-            src="/public/images/coupleTwo.jpg"
-          />
-        </div>
-        <div>
-          <img
-            className="w-full  h-screen  object-cover object-center"
-            src="/public/images/coupleThree.jpg"
-          />
-        </div>
+        {coverPhoto.map((Item) => (
+          <div key={Item.key}>
+            <img
+              className="w-full h-screen object-cover object-center"
+              src={Item.src}
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );

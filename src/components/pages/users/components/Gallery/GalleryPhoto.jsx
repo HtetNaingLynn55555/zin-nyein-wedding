@@ -1,4 +1,3 @@
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import { RowsPhotoAlbum } from "react-photo-album";
@@ -7,7 +6,17 @@ import "react-photo-album/rows.css";
 import { MasonryPhotoAlbum } from "react-photo-album";
 import "react-photo-album/masonry.css";
 import { useState } from "react";
+
+import { data } from "../../../../../data";
+
 export default function GalleryPhoto() {
+  let gallery = data.gallery;
+
+  let images = gallery.map((item) => {
+    return { src: item.src, width: 800, height: 1100 };
+  });
+  console.log(images);
+
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(-1);
   return (
@@ -26,17 +35,8 @@ export default function GalleryPhoto() {
         ]}
       /> */}
       <RowsPhotoAlbum
-        photos={[
-          { src: "/images/coupleOne.jpg", width: 800, height: 600 },
-          { src: "/images/coupleTwo.jpg", width: 800, height: 600 },
-          { src: "/images/coupleThree.jpg", width: 800, height: 600 },
-          { src: "/images/coupleOne.jpg", width: 800, height: 600 },
-          { src: "/images/coupleTwo.jpg", width: 800, height: 600 },
-          { src: "/images/coupleThree.jpg", width: 800, height: 600 },
-          { src: "/images/coupleOne.jpg", width: 800, height: 600 },
-          { src: "/images/coupleTwo.jpg", width: 800, height: 600 },
-          { src: "/images/coupleThree.jpg", width: 800, height: 600 },
-        ]}
+        padding={6}
+        photos={images}
         rowConstraints={(containerWidth) => ({
           maxPhotos: containerWidth < 768 ? 1 : 3, // 1 photo for devices < 768px, 3 for larger
         })}
@@ -46,17 +46,7 @@ export default function GalleryPhoto() {
 
       <Lightbox
         index={index}
-        slides={[
-          { src: "/images/coupleOne.jpg" },
-          { src: "/images/coupleTwo.jpg" },
-          { src: "/images/coupleThree.jpg" },
-          { src: "/images/coupleOne.jpg" },
-          { src: "/images/coupleTwo.jpg" },
-          { src: "/images/coupleThree.jpg" },
-          { src: "/images/coupleOne.jpg" },
-          { src: "/images/coupleTwo.jpg" },
-          { src: "/images/coupleThree.jpg" },
-        ]}
+        slides={images}
         open={index >= 0}
         close={() => setIndex(-1)}
       />
