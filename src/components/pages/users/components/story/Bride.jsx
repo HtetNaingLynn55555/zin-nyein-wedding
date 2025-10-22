@@ -6,7 +6,7 @@ export default function Bride() {
         Aye Nyein Zin
       </h1>
       <img src="/images/icon.png" alt="" />
-      <p className="text-xl text-gray-600 leading-7 text-center font-secondary">
+      <p className="text-xl text-gray-600 leading-7 text-center px-4 sm:px-0 font-secondary">
         " With him, life feels lighter, funnier, and full of meaning. He’s my
         favorite person and my always. "
       </p>

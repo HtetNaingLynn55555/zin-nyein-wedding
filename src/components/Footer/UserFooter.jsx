@@ -8,7 +8,7 @@ const UserFooter = () => {
         style={{ background: "white", color: "gray", textAlign: "center" }}
       >
         <span className="font-secondary">
-          2025 @ htetnainglynnhnl@gmail.com
+          Copyright 2025 @ htetnainglynnhnl@gmail.com
         </span>
       </Footer>
     </Layout>

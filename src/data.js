@@ -31,32 +31,35 @@ const gallery = [
     src: "/images/gallery/gallery6.jpg",
   },
   {
-    key: 7,
-    src: "/images/gallery/gallery7.jpg",
-  },
-  {
     key: 8,
     src: "/images/gallery/gallery8.jpg",
   },
   {
-    key: 9,
-    src: "/images/gallery/gallery9.jpg",
+    key: 7,
+    src: "/images/gallery/gallery7.jpg",
   },
+
+  {
+    key: 12,
+    src: "/images/gallery/gallery12.jpg",
+  },
+
   {
     key: 10,
     src: "/images/gallery/gallery10.jpg",
   },
   {
+    key: 1,
+    src: "/images/gallery/gallery1.jpg",
+  },
+  {
     key: 11,
     src: "/images/gallery/gallery11.jpg",
   },
+
   {
-    key: 12,
-    src: "/images/gallery/gallery12.jpg",
-  },
-  {
-    key: 13,
-    src: "/images/gallery/gallery13.jpg",
+    key: 9,
+    src: "/images/gallery/gallery9.jpg",
   },
   {
     key: 14,
@@ -64,8 +67,8 @@ const gallery = [
   },
 
   {
-    key: 16,
-    src: "/images/gallery/gallery16.jpg",
+    key: 20,
+    src: "/images/gallery/gallery20.jpg",
   },
 ];
 const invitionPhoto = {

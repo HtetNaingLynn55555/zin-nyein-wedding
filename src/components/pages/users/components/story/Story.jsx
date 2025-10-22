@@ -12,13 +12,12 @@ export default function Story() {
         </div>
         <div className="p-[1px] w-2/4 bg-black opacity-30 "></div>
       </div>
-      <p className="col-start-2 col-span-10 text-gray-600 font-secondary leading-7">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
-        laboriosam nobis repellat voluptas praesentium quia animi, eveniet
-        distinctio quas, tenetur magni deleniti, fuga similique quisquam. Minus
-        incidunt iusto exercitationem laborum voluptatibus nam nemo, corporis
-        laudantium dolor tempora. Praesentium error repellendus nobis cupiditate
-        delectus, accusamus adipisci neque enim! Voluptatem, officia aperiam.
+      <p className="col-start-2 col-span-10 text-gray-600 font-secondary pb-5 leading-7">
+        "We met at Meiktila University of Economics, not knowing that a simple
+        hello would change our lives. What began as friendship soon grew into
+        love — a love that has carried us through laughter, distance, and time.
+        After years of sharing dreams and building memories together, we are now
+        ready to begin our next chapter — as husband and wife."
       </p>
     </div>
   );

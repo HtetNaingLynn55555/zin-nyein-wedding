@@ -6,7 +6,7 @@ export default function Groom() {
         Zin Min Thant
       </h1>
       <img src="/images/icon.png" alt="" />
-      <p className="text-xl text-gray-600 leading-7 text-center font-secondary">
+      <p className="text-xl text-gray-600 leading-7 px-4 sm:px-0 text-center font-secondary">
         " When I’m with her, everything feels right — simple moments turn into
         memories I never want to forget."
       </p>
