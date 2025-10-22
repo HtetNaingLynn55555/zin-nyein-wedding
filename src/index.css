@@ -6,3 +6,50 @@
   --font-primary: "Great Vibes", "cursive";
   --font-secondary: "Poppins", sans-serif;
 }
+
+/* .ant-menu-item-selected {
+  color: #e6a817 !important;
+  text-decoration: none;
+  border-bottom: none !important;
+  background-color: transparent !important;
+}
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom: 2px solid #e6a817 !important;
+}
+
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+} */
+
+.ant-menu-item {
+  color: #9ca3af !important; /* gray-400 */
+  font-weight: 500;
+  background-color: transparent !important;
+}
+
+/* --- active link style --- */
+.ant-menu-item-selected {
+  color: #e6a817 !important; /* your yellow active color */
+  background-color: transparent !important;
+}
+
+/* --- underline for active link --- */
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom: 2px solid #e6a817 !important;
+}
+
+/* --- remove default hover underline for non-active items --- */
+.ant-menu-horizontal > .ant-menu-item::after,
+.ant-menu-horizontal > .ant-menu-submenu::after {
+  border-bottom: none !important;
+}
+
+/* --- optional: hover color change (no underline) --- */
+.ant-menu-item:hover {
+  color: #facc15 !important; /* light yellow hover */
+}
+
+.ant-menu-horizontal > .ant-menu-item-selected::after {
+  border-bottom: 2px solid #e6a817 !important;
+}

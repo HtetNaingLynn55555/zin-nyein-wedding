@@ -1,5 +1,7 @@
 import { NavLink } from "react-router-dom";
 
+import { Link } from "react-scroll";
+import { useState } from "react";
 import { Layout, Menu, theme } from "antd";
 const { Header } = Layout;
 const items = Array.from({ length: 3 }).map((_, index) => ({
@@ -7,7 +9,13 @@ const items = Array.from({ length: 3 }).map((_, index) => ({
   label: `home ${index + 1}`,
 }));
 
+const sections = ["Home", "Story", "Invitation", "Gallery"];
 const UserNav = () => {
+  const [current, setCurrent] = useState("Home");
+
+  const handleSetActive = (key) => {
+    setCurrent(key);
+  };
   return (
     <Layout>
       <Header
@@ -27,22 +35,33 @@ const UserNav = () => {
           <img src="/public/images/wedding.png" alt="" />
         </div>
         <Menu
+          selectedKeys={[current]}
           mode="horizontal"
-          items={[
-            { key: 1, label: "Home" },
-            { key: 2, label: "Story" },
-            { key: 3, label: "Gallery" },
-          ]}
           style={{
             flex: 1,
             fontFamily: "Poppins",
-            background: "",
+
             justifyContent: "end",
             alignItems: "end",
             minWidth: 0,
             border: 0,
           }}
-        />
+        >
+          {sections.map((section) => (
+            <Menu.Item key={section}>
+              <Link
+                to={section}
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onSetActive={handleSetActive}
+              >
+                {section.charAt(0).toUpperCase() + section.slice(1)}
+              </Link>
+            </Menu.Item>
+          ))}
+        </Menu>
       </Header>
     </Layout>
   );

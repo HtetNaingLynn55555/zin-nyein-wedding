@@ -16,7 +16,7 @@ export default function CarouselComponent() {
   let coverPhoto = data.cover;
   console.log(coverPhoto);
   return (
-    <div className="relative h-screen w-full">
+    <div id="Home" className="relative h-screen w-full">
       <Carousel
         effect="fade"
         pauseOnHover={false}

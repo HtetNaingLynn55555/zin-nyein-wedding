@@ -1,7 +1,7 @@
 import { MdFavoriteBorder } from "react-icons/md";
 export default function Story() {
   return (
-    <div className="grid grid-cols-12 text-center gap-4 pb-7">
+    <div id="Invitation" className="grid grid-cols-12 text-center gap-4 pb-7">
       <h1 className="col-start-2 col-span-10 font-primary text-gray-900 tracking-widest text-3xl">
         Our Story
       </h1>
