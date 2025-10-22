@@ -45,6 +45,7 @@ export default function GalleryPhoto() {
 
       <Lightbox
         index={index}
+        styles={{ container: { backgroundColor: "rgba(0, 0, 0, .7)" } }}
         slides={images}
         open={index >= 0}
         close={() => setIndex(-1)}
