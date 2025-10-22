@@ -3,8 +3,6 @@ import UserLayout from "./components/Layouts/UserLayout";
 import Home from "./components/pages/users/Home";
 import About from "./components/pages/users/About";
 
-import viteLogo from "/vite.svg";
-
 import { Routes, Route } from "react-router-dom";
 import UserNotFound from "./components/pages/users/UserNotFound";
 
